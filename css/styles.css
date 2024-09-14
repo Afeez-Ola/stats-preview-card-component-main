@@ -55,20 +55,29 @@ img {
     mix-blend-mode: overlay;
 }
 
-.note_side {
+.typoragphy {
     display: flex;
     flex-direction: column;
     width: 60%;
     margin: 4rem;
-    justify-content: center;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+}
+
+.note_side {
     /* gap: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 2rem;
 }
 
 .note_side h2 {
     text-align: left;
     width: 70%;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 .note_side span {
