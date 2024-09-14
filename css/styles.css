@@ -46,7 +46,7 @@ img {
     margin: 15rem auto;
     background: var(--dark-desaturated);
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
 }
 
@@ -76,7 +76,7 @@ img {
 
 .note_side h2 {
     text-align: left;
-    width: 70%;
+    width: 100%;
     font-size: 2.5rem;
     font-weight: 700;
     /* margin-bottom: 3rem; */
@@ -89,7 +89,7 @@ img {
 .note_side p {
     font-size: 0.8rem;
     color: var(--slightly-transparent-white);
-    width: 55%;
+    width: 70%;
     line-height: 1.3rem;
 }
 
@@ -110,4 +110,26 @@ img {
     color: var(--slightly-transparent-white);
     text-transform: uppercase;
     font-size: 0.7rem;
+}
+
+.images {
+    position: relative;
+    background: url("./images/image-header-desktop.jpg");
+    min-height: 27.3rem;
+    /* width: 540px; */
+    min-width: 50%;
+    background: url(/images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.images::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: hsl(277deg 68.19% 24.7% / 70%);
+    filter: brightness(0.8);
 }
