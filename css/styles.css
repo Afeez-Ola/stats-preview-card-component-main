@@ -22,6 +22,7 @@ body {
     color: var(--white);
     -webkit-font-smoothing: antialiased;
     width: 100%;
+    height: 80vh;
 }
 
 body,
@@ -37,5 +38,21 @@ button {
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 15rem auto;
+    background: var(--dark-desaturated);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.images {
+    background: var(--soft-violet);
+}
+
+.images img {
+    display: inline-block;
+    object-fit: contain;
+    opacity: 0.55;
+    filter: brightness(60%);
+    width: 100%;
 }
