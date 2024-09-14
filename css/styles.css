@@ -61,14 +61,23 @@ img {
     width: 60%;
     margin: 4rem;
     justify-content: center;
+    /* gap: 1rem; */
 }
 
 .note_side h2 {
     text-align: left;
     width: 70%;
     font-size: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .note_side span {
     color: var(--soft-violet);
+}
+
+.note_side p {
+    font-size: 0.8rem;
+    color: var(--slightly-transparent-white);
+    width: 55%;
+    line-height: 1.3rem;
 }
