@@ -21,6 +21,7 @@ body {
     background: var(--very-dark-blue);
     color: var(--white);
     -webkit-font-smoothing: antialiased;
+    width: 100%;
 }
 
 body,
@@ -32,4 +33,9 @@ button {
 
 button {
     cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
 }
