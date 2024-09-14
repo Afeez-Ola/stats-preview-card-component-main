@@ -36,6 +36,11 @@ button {
     cursor: pointer;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .container {
     width: 80%;
     margin: 15rem auto;
@@ -47,12 +52,23 @@ button {
 
 .images {
     background: var(--soft-violet);
+    mix-blend-mode: overlay;
 }
 
-.images img {
-    display: inline-block;
-    object-fit: contain;
-    opacity: 0.55;
-    filter: brightness(60%);
-    width: 100%;
+.note_side {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 4rem;
+    justify-content: center;
+}
+
+.note_side h2 {
+    text-align: left;
+    width: 70%;
+    font-size: 2.5rem;
+}
+
+.note_side span {
+    color: var(--soft-violet);
 }
