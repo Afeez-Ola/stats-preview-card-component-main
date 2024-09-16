@@ -109,15 +109,10 @@ img {
 }
 
 .images {
-    /* background: hsl(277, 52%, 56%); */
-    /* background-image: url(/images/image-header-desktop.jpg); */
     position: relative;
     width: 70%;
     display: flex;
     border-radius: 0 1rem 1rem 0;
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
 }
 
 .images::before {
@@ -140,34 +135,41 @@ img {
         margin: 2rem auto;
         border-radius: 1.2rem;
     }
+
     .images {
         height: 14rem;
         width: 100%;
         border-radius: 1.2rem 1.2rem 0 0;
         background-image: url(/images/image-header-mobile.jpg);
     }
+
     .typoragphy {
         margin: 4rem auto;
     }
+
     .note_side h2,
     .note_side p {
         text-align: center;
     }
+
     .note_side p {
         width: 100%;
         font-size: 1rem;
         text-align: center;
         margin: auto;
     }
+
     .stats {
         flex-direction: column;
         margin: auto;
         align-items: center;
         gap: 2rem;
     }
+
     .stats h3 {
         text-align: center;
     }
+
     .stats p {
         font-weight: 600;
         font-size: 0.9rem;
