@@ -126,10 +126,15 @@ img {
 @media screen and (min-width:300px) and (max-width:768px) {
     .container {
         flex-direction: column-reverse;
-        /* margin-top: 0; */
         margin: 0 auto;
     }
     .images {
         width: 100%;
+    }
+    .note_side h2 {
+        text-align: center;
+    }
+    .typoragphy {
+        margin: 4rem auto;
     }
 }
