@@ -4,7 +4,7 @@
     --soft-violet: hsl(277, 64%, 61%);
     --white: hsl(0, 0%, 100%);
     --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
-    --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+    --slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
     --font-size: 1rem;
     --font-family-inter: "Inter", sans-serif;
     --font-family-lexend: "Lexend Deca", sans-serif;
@@ -103,7 +103,7 @@ img {
 }
 
 .stats p {
-    color: var(--slightly-transparent-white);
+    color: var(--slightly-transparent-white-stat);
     text-transform: uppercase;
     font-size: 0.7rem;
 }
@@ -126,15 +126,37 @@ img {
 @media screen and (min-width:300px) and (max-width:768px) {
     .container {
         flex-direction: column-reverse;
-        margin: 0 auto;
+        margin: 2rem auto;
+        border-radius: 1.2rem;
     }
     .images {
         width: 100%;
-    }
-    .note_side h2 {
-        text-align: center;
+        border-radius: 1.2rem 1.2rem 0 0;
     }
     .typoragphy {
         margin: 4rem auto;
+    }
+    .note_side h2,
+    .note_side p {
+        text-align: center;
+    }
+    .note_side p {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        margin: auto;
+    }
+    .stats {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        gap: 2rem;
+    }
+    .stats h3 {
+        text-align: center;
+    }
+    .stats p {
+        font-weight: 600;
+        font-size: 0.9rem;
     }
 }
