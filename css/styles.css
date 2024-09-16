@@ -49,8 +49,6 @@ img {
     margin: 15rem auto;
     background: var(--dark-desaturated);
     display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
 }
 
 .typoragphy {
@@ -112,8 +110,9 @@ img {
 
 .images {
     background: hsl(277, 52%, 56%);
-    min-height: 25.9rem;
+    /* min-height: 25.9rem; */
     width: 70%;
+    display: flex;
 }
 
 .images img {
@@ -122,4 +121,15 @@ img {
     object-fit: cover;
     mix-blend-mode: multiply;
     opacity: .8;
+}
+
+@media screen and (min-width:300px) and (max-width:768px) {
+    .container {
+        flex-direction: column-reverse;
+        /* margin-top: 0; */
+        margin: 0 auto;
+    }
+    .images {
+        width: 100%;
+    }
 }
