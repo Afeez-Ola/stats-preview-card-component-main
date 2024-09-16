@@ -58,15 +58,12 @@ img {
     margin: 4rem;
     justify-content: center;
     gap: 4rem;
-    /* align-items: flex-end; */
 }
 
 .note_side {
-    /* gap: 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     gap: 2rem;
 }
 
@@ -75,7 +72,6 @@ img {
     width: 100%;
     font-size: 2.0rem;
     font-weight: 700;
-    /* margin-bottom: 3rem; */
 }
 
 .note_side span {
@@ -110,9 +106,9 @@ img {
 
 .images {
     background: hsl(277, 52%, 56%);
-    /* min-height: 25.9rem; */
     width: 70%;
     display: flex;
+    border-radius: 0 1.3rem 1.3rem 0;
 }
 
 .images img {
@@ -129,32 +125,39 @@ img {
         margin: 2rem auto;
         border-radius: 1.2rem;
     }
+
     .images {
         width: 100%;
         border-radius: 1.2rem 1.2rem 0 0;
     }
+
     .typoragphy {
         margin: 4rem auto;
     }
+
     .note_side h2,
     .note_side p {
         text-align: center;
     }
+
     .note_side p {
         width: 100%;
         font-size: 1rem;
         text-align: center;
         margin: auto;
     }
+
     .stats {
         flex-direction: column;
         margin: auto;
         align-items: center;
         gap: 2rem;
     }
+
     .stats h3 {
         text-align: center;
     }
+
     .stats p {
         font-weight: 600;
         font-size: 0.9rem;
