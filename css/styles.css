@@ -130,54 +130,55 @@ img {
     background-position: center;
 }
 
-@media screen and (min-width:300px) and (max-width:768px) {
+@media screen and (min-width:300px) and (max-width:600px) {
     .container {
         flex-direction: column-reverse;
         margin: 2rem auto;
         border-radius: 1.2rem;
     }
-
     .images {
         border-radius: 1rem 1rem 0rem 0;
         min-height: 14rem;
         min-width: 100%;
         background-image: linear-gradient(rgba(76, 19, 111, 0.744), rgba(87, 27, 124, 0.7)), url(/images/image-header-mobile.jpg);
     }
-
     .images::before {
         border-radius: 1rem 1rem 0rem 0;
     }
-
     .typoragphy {
         margin: 4rem auto;
         width: 100%;
     }
-
     .note_side h2 {
         text-align: center;
         width: 100%;
     }
-
     .note_side p {
         width: 100%;
         font-size: 1rem;
         text-align: center;
         margin: auto;
     }
-
     .stats {
         flex-direction: column;
         margin: auto;
         align-items: center;
         gap: 2rem;
     }
-
     .stats h3 {
         text-align: center;
     }
-
     .stats p {
         font-weight: 600;
         font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    .images {
+        width: 60%;
     }
 }
