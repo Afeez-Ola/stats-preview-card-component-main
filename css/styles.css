@@ -133,12 +133,13 @@ img {
 @media screen and (min-width:300px) and (max-width:600px) {
     .container {
         flex-wrap: wrap-reverse;
-        margin: 0 auto;
+        margin: 1.5rem auto;
         border-radius: 1.2rem;
     }
     .images {
         border-radius: 1rem 1rem 0rem 0;
         /* min-height: 14rem; */
+        max-height: 10rem;
         aspect-ratio: 16/9;
         height: auto;
         min-width: 100%;
@@ -148,9 +149,9 @@ img {
         border-radius: 1rem 1rem 0rem 0;
     }
     .typoragphy {
-        margin: 4rem auto;
+        margin: 1rem auto;
         max-width: 100%;
-        /* padding: 4rem; */
+        /* padding: 4rem auto; */
     }
     .note_side h2 {
         text-align: center;
@@ -163,11 +164,12 @@ img {
         margin: auto;
     }
     .stats {
-        flex-wrap: wrap;
-        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        flex-direction: column;
         margin: auto;
         align-items: center;
-        gap: 1rem;
+        gap: 0rem;
+        /* padding-bottom: 2rem; */
     }
     .stats div {
         margin: auto;
